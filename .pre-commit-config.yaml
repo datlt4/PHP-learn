@@ -2,10 +2,21 @@
   sha: 1.1.0
   hooks:
   - id: php-lint
+
+- repo: https://github.com/hootsuite/pre-commit-php.git
+  sha: 1.1.0
+  hooks:
+  - id: php-lint-all
+
+- repo: https://github.com/hootsuite/pre-commit-php.git
+  sha: 1.1.0
+  hooks:
   - id: php-unit
+
+- repo: https://github.com/hootsuite/pre-commit-php.git
+  sha: 1.1.0
+  hooks:
   - id: php-cs
     files: \.(php)$
     args: [--standard=PSR1 -p]
-  - id: php-cbf
-    files: \.(php)$
-    args: [--standard=PSR1 -p]
+
