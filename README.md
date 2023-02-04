@@ -1,6 +1,6 @@
 # PHP-Learn
 
-[Learn tutorial in Hoang teacher's youtube channel for more detail](https://www.youtube.com/watch?v=r1qie9pDweE)
+[Watch tutorial in Hoang teacher's youtube channel for more detail](https://www.youtube.com/watch?v=r1qie9pDweE)
 
 # Install Laravel
 
