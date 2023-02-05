@@ -19,15 +19,18 @@ php -v
 
 ```bash
 sudo apt install --assume-yes mariadb-server mariadb-client -y
-sudo mysql -u <username> -p
-```
+sudo mysql -u root -p
 
-```SQL
-CREATE DATABASE <table_name>;
 CREATE USER '<username>'@'localhost' IDENTIFIED BY '<password>';
 GRANT ALL ON <table_name>.* TO '<username>'@'localhost';
 FLUSH PRIVILEGES;
 QUIT;
+```
+
+```SQL
+sudo mysql -u <username> -p
+
+CREATE DATABASE <table_name>;
 ```
 
 ```bash
@@ -37,7 +40,7 @@ HASH="$(wget -q -O - https://composer.github.io/installer.sig)"
 php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
 php composer-setup.php
 php -r "unlink('composer-setup.php');"
-mv composer.phar /usr/local/bin/composer
+sudo mv composer.phar /usr/local/bin/composer
 cd /usr/bin && sudo ln -sf /usr/local/bin/composer && cd -
 sudo chmod +x /usr/local/bin/composer
 composer --version
