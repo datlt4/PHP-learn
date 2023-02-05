@@ -1,6 +1,10 @@
 # PHP-Learn
 
-[Watch tutorial in Hoang teacher's youtube channel for more detail](https://www.youtube.com/watch?v=r1qie9pDweE)
+- [Watch tutorial in Hoang teacher's youtube channel for more detail](https://www.youtube.com/watch?v=r1qie9pDweE)
+
+- Run: `php -S localhost:5500 -t .`
+
+- Access: `http://localhost:5500/demo_project/index.php`
 
 # Install Laravel
 
